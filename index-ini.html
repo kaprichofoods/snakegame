@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Snake</h1>
+            <div class="game-info">
+                <div class="score-container">
+                    <span class="label">Puntuación</span>
+                    <span class="score" id="score">0</span>
+                </div>
+                <div class="level-container">
+                    <span class="label">Nivel</span>
+                    <span class="level" id="level">1</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="game-container">
+            <div class="game-board" id="gameBoard">
+                <!-- El tablero se generará dinámicamente con JavaScript -->
+            </div>
+            
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 class="overlay-title" id="overlayTitle">Snake Game</h2>
+                    <p class="overlay-subtitle" id="overlaySubtitle">Presiona ESPACIO para comenzar</p>
+                    <div class="controls-info">
+                        <p>Usa las flechas del teclado para moverte</p>
+                        <p>Captura las manzanas para subir de nivel</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="controls">
+                <div class="control-group">
+                    <span class="control-label">Controles:</span>
+                    <div class="arrow-keys">
+                        <div class="arrow-key">↑</div>
+                        <div class="arrow-keys-row">
+                            <div class="arrow-key">←</div>
+                            <div class="arrow-key">↓</div>
+                            <div class="arrow-key">→</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <span class="control-label">Pausa:</span>
+                    <span class="control-key">ESPACIO</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
